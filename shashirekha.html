@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aeromodelling</title>
+    <style>
+        body {
+            background-image: url('image.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+        }
+         
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        main {
+            padding: 20px;
+        }
+         
+        
+         
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aeromodelling.html">Aeromodelling</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="help.html">Help</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1 align="center" style="font-size: 60px; font-weight: bold; " >AEROMODELLING CLUB</h1>
+            <h3 align="center" style="font-size: 44px; font-weight: Arial;"> Welcome to Aeromodelling Club </h3>
+        </section>
+      
+        <p align="center"style="font-size: 28px; font-weight: Arial;color:#5900ff">Aeromodelling is the activity involving design, development and flying of small air vehicles. It is a very exciting and interesting way to learn, apply and understand science and engineering principles. </p>
+       
+        <p  align="center" style="font-size: 60px; font-weight: bold;">Make Landing Page Fast and Easy.</p>
+        <div>
+            <h3 align="center"> <img src="image1.jpeg"width="300px"></h3>
+        </div>
+
+            <div style="display: flex; justify-content: center; align-items: center; height: 19vh;">
+                <form style="width: 300px; background-color: #7d7d7ed8; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(161, 21, 21, 0.1);">
+                    <div style="margin-bottom: 20px;">
+                        <label style="font-size: 16px; font-weight: Arial;"for="username">Username:</label>
+                        <input type="text" id="username" placeholder="Enter email address">
+                
+                    <button style="font-size: 12px; font-weight: Arial;color:rgb(228, 18, 18);"type="subscribe" class="btn btn-primary" id="login-btn">Subscribe</button>
+                    </div>
+                </form>
+
+            </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Shashirekha. All rights reserved.</p>
+    </footer>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>
